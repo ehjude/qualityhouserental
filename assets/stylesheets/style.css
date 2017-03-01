@@ -1,0 +1,231 @@
+/********** FIXES **********/
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	height: 0;
+	line-height: 0;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	font-family: 'Arial', sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+nav {
+	width: 100%;
+	height: 50px;
+	background: #2a5836;
+	color: #fff;
+	line-height: 50px;
+	text-align: middle;
+	text-align: center;
+	text-transform: uppercase;
+	position: fixed;
+	top: 0;
+	z-index: 100;
+}
+
+nav a {
+	text-decoration: none;
+	color: #fff;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+nav a:hover {
+	opacity: 0.7;
+}
+
+#page-content {
+	padding-top: 80px;
+	background-image: url(../images/background.jpg);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+}
+
+#welcome,
+#house-intro,
+#house-closing,
+#map-link {
+	width: 90%;
+	max-width: 650px;
+	margin: 20px auto;
+	background: #f7f7f7;
+	padding: 25px;
+	border: 3px solid #fff;
+	border-radius: 5px;
+	font-size: 20px;
+}
+
+#map-link {
+	background: #3a3a3a;
+	text-align: center;
+	font-size: 17px;
+	margin-top: -25px;
+}
+
+a #map-link {
+	color: #fff;
+	margin-top: -25px;
+}
+
+a:hover #map-link {
+	color: #dadada;
+}
+
+#welcome p,
+#house-intro,
+#house-closing {
+	margin-bottom: 20px;
+	line-height: 30px;
+}
+
+#house-intro h1 {
+	font-weight: 800;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.house-container,
+.photo-container,
+#map-container {
+	width: 90%;
+	max-width: 650px;
+	margin: 0 auto 20px;
+	background: #e6e6e6;
+	border: 3px solid #fff;
+	border-radius: 5px;
+}
+
+.house-container img,
+.photo-container img {
+	width: 100%;
+}
+
+#map-container iframe {
+	width: 100%;
+}
+
+.house-description,
+.photo-description {
+	padding: 20px 30px;
+	font-size: 20px;
+	line-height: 30px;
+	background: #fff;
+}
+
+.house-description h1 {
+	font-weight: 800;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.photo-description {
+	text-align: center;
+	padding: 10px;
+}
+
+/* ------------
+			800PX
+	 ------------ */
+
+@media screen and (max-width: 800px) {
+
+	#welcome,
+	#house-intro {
+		margin-top: 0;
+	}
+}
+
+/* ------------
+			450PX
+	 ------------ */
+
+@media screen and (max-width: 500px) {
+	#welcome {
+		margin-top: -20px;
+	}
+
+	#page-content {
+		padding-top: 70px;
+	}
+
+	#house-intro h1,
+	.house-description h1 {
+		font-size: 16px;
+	}
+
+	nav a {
+		font-size: 12px;
+		text-overflow: none;
+	}
+}
